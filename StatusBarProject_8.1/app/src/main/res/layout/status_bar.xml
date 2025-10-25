@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/statusLayout"
+    android:layout_width="320dp"
+    android:layout_height="36dp"
+    android:orientation="horizontal"
+    android:background="#CC666666"
+    android:paddingHorizontal="8dp"
+    android:gravity="center_vertical">
+
+    <!-- 最左侧：流量网速 -->
+    <TextView
+        android:id="@+id/trafficText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0B"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <!-- 流量右侧：网络状态 -->
+    <TextView
+        android:id="@+id/networkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:text="📡"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <!-- 中间填充空间 -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- 时间左侧：电量 -->
+    <TextView
+        android:id="@+id/batteryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="8dp"
+        android:text="🔋100"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp" />
+
+    <!-- 最右侧：时间 -->
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
